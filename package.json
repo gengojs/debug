@@ -1,0 +1,31 @@
+{
+  "name": "gengojs-debug",
+  "version": "1.0.0",
+  "description": "The debugger console for gengo.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwatakeshi/gengojs-debug.git"
+  },
+  "keywords": [
+    "debug",
+    "gengo.js",
+    "utility",
+    "gengojs",
+    "i18n"
+  ],
+  "author": "iwatakeshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iwatakeshi/gengojs-debug/issues"
+  },
+  "homepage": "https://github.com/iwatakeshi/gengojs-debug#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "debug": "^2.2.0",
+    "source-map-support": "^0.3.2"
+  }
+}
