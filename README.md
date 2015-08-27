@@ -1,5 +1,5 @@
 # gengojs-debug
-The debugger console for gengo.js
+The debugger console for [gengo.js](http://github.com/iwatakeshi/gengojs)
 
 ## Usage
 
@@ -33,7 +33,6 @@ node index.js
 The available namespaces are:
 
 * core
-* plugins
 * parser
 * router
 * backend
@@ -51,3 +50,13 @@ The available levels are:
 * info
 * verbose
 * silly
+
+Note that you must prepend `'gengo'` before the namespaces
+as you access the namespace with a `'.'` and then specify
+the debug level after appending a `':'`.
+
+Example:
+
+```bash
+DEBUG=gengo.parser:debug gengo.router:*
+```
