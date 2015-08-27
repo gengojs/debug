@@ -35,7 +35,7 @@ var Debug = (function () {
 		this.debug = (function () {
 			var obj = {};
 			var gengo = 'gengo';
-			var namespaces = ['core', 'plugins', 'parser', 'router', 'backend', 'api', 'localize', 'header'];
+			var namespaces = ['core', 'parser', 'router', 'backend', 'api', 'localize', 'header'];
 			var levels = ['debug', 'warn', 'error', 'info', 'verbose', 'silly'];
 			namespaces.forEach(function (namespace) {
 				levels.forEach(function (level) {

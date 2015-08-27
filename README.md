@@ -21,7 +21,7 @@ In terminal:
 ```bash
 # In OSX, set the namespace and the debug level then run a file:
 
-DEBUG=core, node index.js
+DEBUG=gengo.core, node index.js
 
 # In Windows, set the namespace and the debug level:
 DEBUG=gengo.core:warn
