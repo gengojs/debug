@@ -5,7 +5,7 @@ The debugger console for [gengo.js](http://github.com/iwatakeshi/gengojs)
 
 #### ES6
 ```javascript
-import {debugify as debug} from 'gengojs-debug';
+import debug from 'gengojs-debug';
 
 debug(namespace:string, level:string, args:*);
 ```
@@ -20,7 +20,6 @@ In terminal:
 
 ```bash
 # In OSX, set the namespace and the debug level then run a file:
-
 DEBUG=gengo.core:warn, node index.js
 
 # In Windows, set the namespace and the debug level:
