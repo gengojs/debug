@@ -1,5 +1,5 @@
 # gengojs-debug
-The debugger console for [gengo.js](http://github.com/iwatakeshi/gengojs)
+The official logger for [gengo.js](http://github.com/iwatakeshi/gengojs) and now for your app too!
 
 ## Usage
 

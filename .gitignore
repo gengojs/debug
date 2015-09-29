@@ -1,3 +1,6 @@
 node_modules/
 .settings/
 test/
+.backup/
+.publish/
+jsconfig.json
