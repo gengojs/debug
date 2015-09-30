@@ -77,6 +77,7 @@ var Debug = function Debug(namespace) {
         return _chalk2['default'].green(a);
       });
       _this.console[namespace].apply(null, args);
+      return _this;
     };
   });
 }
