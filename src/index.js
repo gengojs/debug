@@ -84,9 +84,7 @@ var Debug = function Debug(namespace) {
       if (level === 'warn') args = args.map(function (a) {
         return _chalk2['default'].yellow(a);
       });
-      if (level === 'info') args = args.map(function (a) {
-        return _chalk2['default'].green(a);
-      });
+
       _this.console[namespace].apply(null, args);
       return _this;
     };
@@ -101,9 +99,14 @@ var Debug = function Debug(namespace) {
  */
 ;
 
-exports['default'] = function (namespace) {
+var debug = function debug(namespace) {
   return new Debug(namespace);
 };
 
+debug.util = {
+  inspect: inspect
+};
+
+exports['default'] = debug;
 module.exports = exports['default'];
 //# sourceMappingURL=source maps/index.js.map
