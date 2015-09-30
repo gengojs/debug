@@ -1,6 +1,6 @@
 {
   "name": "gengojs-debug",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The debugger console for gengo.js",
   "main": "src/index.js",
   "scripts": {
