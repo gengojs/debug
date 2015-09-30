@@ -1,5 +1,5 @@
 # gengojs-debug
-The debugger console for [gengo.js](http://github.com/iwatakeshi/gengojs)
+The debugger console for [gengo.js](http://github.com/gengojs/gengojs)
 
 ## Usage
 
@@ -7,13 +7,23 @@ The debugger console for [gengo.js](http://github.com/iwatakeshi/gengojs)
 ```javascript
 import debug from 'gengojs-debug';
 
-debug(namespace:string, level:string, args:*);
+debug(namespace:string).[level:string](args:*);
 ```
 #### ES5
 ```javascript
 var debug = require('gengojs-debug');
 
-debug(namespace:string, level:string, args:*);
+debug(namespace:string).[level:string](args:*);
+```
+
+It's even possible to chain the methods:
+
+```javascript
+/* Example */
+
+debug('core')
+	.warn('This is a warning')
+	.error('This is an error!');
 ```
 
 In terminal:
