@@ -23,8 +23,20 @@
     "url": "https://github.com/iwatakeshi/gengojs-debug/issues"
   },
   "homepage": "https://github.com/iwatakeshi/gengojs-debug#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-changelog": "^1.0.0",
+    "gulp-gh-pages": "^0.5.2",
+    "gulp-jsbeautify": "^0.1.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-shell": "^0.4.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "jshint-stylish": "^2.0.1",
+    "rimraf": "^2.4.3"
+  },
   "dependencies": {
+    "chalk": "^1.1.1",
     "debug": "^2.2.0",
     "source-map-support": "^0.3.2"
   }
