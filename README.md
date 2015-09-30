@@ -26,6 +26,20 @@ debug('core')
 	.error('This is an error!');
 ```
 
+**Notes**
+
+It's best if you define a logger with a namespace set when you require `gengojs-debug`:
+
+```javascript
+/* Example */
+
+var debug = require('gengojs-debug');
+var log = debug('core');
+
+log.debug(/*...*/);
+
+```
+
 In terminal:
 
 ```bash
