@@ -20,10 +20,21 @@ var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
+var _util = require('util');
+
+var _util2 = _interopRequireDefault(_util);
+
 require('source-map-support/register');
 
+var inspect = function inspect(object) {
+  return _util2['default'].inspect(object, {
+    showHidden: true,
+    depth: 15
+  });
+};
 /**
  * Debug is a debug wrapper for gengo.js
+ * @class Debug
  */
 
 var Debug = function Debug(namespace) {
@@ -63,7 +74,7 @@ var Debug = function Debug(namespace) {
       args = args.map(function (a) {
         var temp;
         try {
-          if (!_lodash2['default'].isFunction(a) || !_lodash2['default'].isString(a)) temp = JSON.stringify(a, null, 2);
+          if (!_lodash2['default'].isFunction(a) || !_lodash2['default'].isString(a)) temp = inspect(a);
         } catch (error) {}
         return temp || a;
       });
