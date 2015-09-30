@@ -38,6 +38,7 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "debug": "^2.2.0",
+    "lodash": "^3.10.1",
     "source-map-support": "^0.3.2"
   }
 }
